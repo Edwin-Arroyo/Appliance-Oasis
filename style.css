@@ -1,0 +1,660 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 65px;
+    color: #222;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 55px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+/* Button styling */
+
+#banner button.normal{
+
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #dc1c1c;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    width: auto; /* Set width to auto */
+    margin-top: 10px
+}
+
+
+body {
+    width: 100%;
+}
+
+/* Header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #e3e6f3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999 ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 120px;
+}
+
+/* Navigation */
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navigation li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navigation li a:hover,
+#navigation li a.active {
+    color: #088178;
+}
+
+/* Home Page Hero Section */
+
+#hero{
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding: 15px;
+}
+#hero h1{
+    padding: 15px;
+    color:#088178;
+}
+#hero button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    padding: 12px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+#product1 {
+    text-align: center;
+}
+
+/* make the profducts display as a row rather than a column */
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap; /* make it so the items are not just in a row so the user does not have to slide the bar to see all products*/
+
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* add a shadow to the box when you are hovering over it with your cursor*/
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+/* add a style to the cart logo */
+#product1 .pro .cart{
+    width: 40px;
+    height: 40 px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+/* style for the banner that prompts the user to see deals*/
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("images/banner.jpeg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* style the text on the banner */
+
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: #ef3636;
+
+}
+
+/* Style for the newsletter */
+#newsletter {
+    display: flex;
+    justify-content: space-between; /* Align items to the right */
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #088178;
+    padding: 20px; /* Add some padding for spacing */
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff; /* Set text color to white */
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+
+#newsletter .form {
+    display: flex;
+    width: 100%;
+}
+
+#newsletter input {
+    width: 250px; /* Set a fixed width for the input */
+    height: 3.125rem;
+    padding: 0 1.125em;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 10px;
+}
+
+#newsletter button.normal {
+    height: 3.125rem;
+    padding: 0 1.125em;
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#newsletter .from{
+    display: flex;
+    width: 50%;
+
+}
+
+/* style for the footer section */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6x;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover{
+    color:#088178
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+/* SHOP PAGE STYLE 
+    Page-header*/
+#page-header{
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Align items to the right */
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #088178;
+    padding: 20px; /* Add some padding for spacing */
+    flex-direction: column;
+}
+
+#page-header p{
+    color:#000;
+    font-size: 18px;
+}
+
+/* Single Product page style */
+
+#pDetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#pDetails .singleProdImg{
+    width: 40%;
+    margin-right: 50px;
+}
+
+#pDetails .singleProDetails{
+    width: 50%;
+    padding-top: 30px;
+}
+
+#pDetails .singleProDetails h4{
+    padding: 40px 0 20px 0;
+}
+
+#pDetails .singleProDetails{
+    font-size: 26px;
+}
+#pDetails .singleProDetails input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#pDetails .singleProDetails input:focus{
+    outline: none;
+}
+#pDetails .singleProDetails button{
+    background: #088178;
+    height: 25px;
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+#pDetails .singleProDetails span{
+    line-height: 25px;
+}
+
+/* Blog Styles*/
+#page-header .blog-header{
+    display: flex;
+    text-align: center;
+    justify-content: center; /* Align items to the right */
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #088178;
+    padding: 20px; /* Add some padding for spacing */
+    flex-direction: column;
+}
+#blog{
+    padding: 150px 150px 0 150px;
+}
+#blog .blog1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 40px;
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .blog-details{
+    width: 50%;
+}
+#blog .blog1 h1{
+    position: absolute;
+    left: 0;
+    top: -100px;
+    font-size: 70px;
+    font-weight: 700;
+    color: black;
+    z-index: -9;
+}
+
+/* Style for the Contact page*/
+
+#contact{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact .details{
+    width: 40%;
+}
+#contact .details span,
+#form1 form span{
+    font-size: 18px;
+}
+#contact .details h2,
+#form1 h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contact .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#contact .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+#contact .details .map{
+    width: 55%;
+    height: 400px;
+}
+#contact .details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* Style for Form that lets user send message */
+#form1{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid #e1e1e1;;
+}
+#form1 form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form1 form input,
+#form1 form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+}
+#form1 form button{
+    background: #088178;
+    height: 25px;
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+/* Style for cart */
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width: 70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left:none;
+    border-right: none;
+}
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+#cart table tbody  td{
+    font-size: 13px;
+}
+#cart-total{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+}
+#coupon input{
+    height: 45px;
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+#coupon button{
+    background-color: #088178;
+    color: white;
+    padding: 12px 20px; /* align with apply coupon box*/
+}
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+
+}
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    width: 50px;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 14px;
+}
+#subtotal button, #cart-total button{
+    background: #088178;
+    height: 45px;
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The store will be selling home appliances-->
+    <!--<tile>Appliance Oasis</tile>-->
+    <!-- link to the CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="script.js" async></script>
+    
+</head>
+
+<body>
+
+    <!-- create the navigation menu for the store-->
+    <section id="header">
+        <!-- insert the logo -->
+        <a href="#"><img src="images/logo.png" class="logo" alt="" width="350" height="300" /></a>
+
+        <!-- create the navigation links -->
+        <div>
+            <ul id="navigation">
+                <li><a href="index.html" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- How the cart wiill look-->
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button class="remove-item" ><i class="far fa-times-circle"></i></button></td>
+                    <td><img src="images/espresso.jpeg" alt=""></td>
+                    <td>1- Cup Semi Automatic Espresso Machine</td>
+                    <td>$379.00</td>
+                    <td><input type="number" value="0"></td>
+                    <td>$0.00</td>
+                </tr>
+                <tr>
+                    <td><button class="remove-item" ><i class="far fa-times-circle"></i></button></td>
+                    <td><img src="images/miniFridge.jpeg" alt=""></td>
+                    <td>4.4 cu. ft. Mini Fridge</td>
+                    <td>$375.00</td>
+                    <td><input type="number" value="0"></td>
+                    <td>$0.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-total" class="section-p1">
+        <div id="coupon">
+            <h3>Apply coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Coupon Code">
+                <button>Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart total</h3>
+            <table>
+                <tr>
+                    <td><strong>Subtotal</strong></td>
+                    <td id="subtotal-amount">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td id="shipping-amount">$7.99</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="total-amount">$0.00</td>
+                </tr>
+            </table>
+            <button>Proceed To Checkout</button>
+        </div>
+    </section>
+
+
+    <!-- footer section for contact information -->
+    <footer class="section-p1">
+        <div class="column">
+            <img src="images/logo.PNG" alt="" width="350" height="300">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 1 South Ave, Garden City, NY 11530</p>
+            <p><strong>Phone:</strong> 000-000-000</p>
+            <p><strong>Hours:</strong> 9:00AM - 5:00Pm, Mon - Fri</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Conatact us</a>
+        </div>
+        <div class="column">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="column install">
+            <h4>Install App</h4>
+            <p>Available on App Store or Google Play</p>
+            <div class="row">
+                <img src="images/app.png" alt="" width="250" height="50">
+                <img src="images/play.png" alt="" width="275" height="50">
+            </div>
+            <p>Secure Payment Options</p>
+            <img src="images/pay.png" alt="" width="300" height="175">
+        </div>
+        <div class="copyright">
+            <p>	&copy 2023 Appliance Oasis</p>
+        </div>
+    </footer>
+
+`
+
+
+
+</body>
+
+</html>

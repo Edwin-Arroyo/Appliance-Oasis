@@ -1,0 +1,121 @@
+<!-- file for when a user clicks on a single item within the shop page-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The store will be selling home appliances-->
+    <!--<tile>Appliance Oasis</tile>-->
+    <!-- link to the CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="single.js" async></script>
+</head>
+
+<body>
+
+    <!-- create the navigation menu for the store-->
+    <section id="header">
+        <!-- insert the logo -->
+        <a href="#"><img src="images/logo.png" class="logo" alt="" width="350" height="300" /></a>
+
+        <!-- create the navigation links -->
+        <div>
+            <ul id="navigation">
+                <li><a href="index.html" href="index.html">Home</a></li>
+                <li><a class="active">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="pDetails" class="section-p1">
+        <div class="singleProdImg">
+            <img src="" width="100%" id="MainImg" alt="">
+        </div>
+        <div class="singleProDetails">
+            <h6>Home / Appliances</h6>
+            <h4 id="ProductName"></h4>
+            <h2 id="ProductPrice"></h2>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span id="ProductDescription"></span>
+        </div>
+    </section>
+
+
+    <!-- newsletter so the user can sign up for promotional deals-->
+
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign up For Our Newsletter</h4>
+            <p>Get e-mail updates about our latest <span>deals.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- footer section for contact information -->
+    <footer class="section-p1">
+        <div class="column">
+            <img src="images/logo.PNG" alt="" width="350" height="300">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 1 South Ave, Garden City, NY 11530</p>
+            <p><strong>Phone:</strong> 000-000-000</p>
+            <p><strong>Hours:</strong> 9:00AM - 5:00Pm, Mon - Fri</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Conatact us</a>
+        </div>
+        <div class="column">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="column install">
+            <h4>Install App</h4>
+            <p>Available on App Store or Google Play</p>
+            <div class="row">
+                <img src="images/app.png" alt="" width="250" height="50">
+                <img src="images/play.png" alt="" width="275" height="50">
+            </div>
+            <p>Secure Payment Options</p>
+            <img src="images/pay.png" alt="" width="400" height="250">
+        </div>
+        <div class="copyright">
+            <p>	&copy 2023 Appliance Oasis</p>
+        </div>
+    </footer>
+
+
+
+
+
+    
+</body>
+
+</html>
